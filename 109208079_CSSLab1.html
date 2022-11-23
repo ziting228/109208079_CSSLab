@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+span{
+    color: blue;
+    border: 1px solid black;
+}
+
+.extra span{
+    color: inherit;
+}
+
+#myheader{
+    background-color:cadetblue;
+    padding: 20px;
+    text-align: left;
+    font-size: 16pt;
+}
+
+.intro{
+    padding: 40px;
+    text-align:center;
+    font-size: 16pt;
+}
+
+
+body{
+    background-color: linen;
+}
+
+p{
+    color: mediumseagreen;
+    margin-left: 40px;
+    font-family: monospace;
+}
+
+</style>
+</head>
+
+<body>
+<form action = "/action_page.php">
+    <h1 id="#myheader"> Please fill in this <span>form</span>, thank you!</h1>
+    <p><label>Color:
+        <input type="color" autofocus />
+            #ADD8E6
+    </label></p>
+
+    <h1 class="extra" style="color:green"> Let us know more about you</h1>
+    <p><label> Birthday: </label>
+    <input type = "date" ></p>
+
+    <p><label>Email:</label>
+    <input type = "email" name = "email" placeholder = "name@domain.com" ></p>
+
+    <p><label>Number:</label>
+    <input type = "number" name ="number" min="0" max="7"  ></p>
+
+    <em><label>Range: </em>
+    <input type = "range" min = "0" max = "20"></p>
+
+    <p><label> Search:</label>
+    <input type = "search" name = "search" placeholder = "search query"></p>
+
+    <p><label> Time:</label>
+    <input type = "time" name="time"></p>
+
+
+    <input type = "submit" value = "submit">
+    <input type = "reset" value = "clear">
+</body>
+</form>
+</html>
